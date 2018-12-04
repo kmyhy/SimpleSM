@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_6FluYPbHEeiCt-rTIpjJTg" name="RootElement">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_6FpYwPbHEeiCt-rTIpjJTg" name="StateMachine1" visibility="public">
+    <region xmi:type="uml:Region" xmi:id="_6Fp_0PbHEeiCt-rTIpjJTg" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_BPq_YPbcEeiCt-rTIpjJTg" source="_zJiLIPbbEeiCt-rTIpjJTg" target="_3j6rwPbbEeiCt-rTIpjJTg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_dCJn0PbcEeiCt-rTIpjJTg" source="_3j6rwPbbEeiCt-rTIpjJTg" target="_TxcRcPbcEeiCt-rTIpjJTg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_W8ZqMPbfEeiCt-rTIpjJTg" event="_G6LZMPbeEeiCt-rTIpjJTg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_kyEg4PbcEeiCt-rTIpjJTg" source="_TxcRcPbcEeiCt-rTIpjJTg" target="_fEer8PbcEeiCt-rTIpjJTg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_b7wgIPbfEeiCt-rTIpjJTg" event="_SQtzoPbeEeiCt-rTIpjJTg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_sZFVkPbcEeiCt-rTIpjJTg" source="_fEer8PbcEeiCt-rTIpjJTg" target="_mINNYPbcEeiCt-rTIpjJTg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_en5WQPbfEeiCt-rTIpjJTg" event="_ZROB8PbeEeiCt-rTIpjJTg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_1f03oPbcEeiCt-rTIpjJTg" source="_mINNYPbcEeiCt-rTIpjJTg" target="_vNTJoPbcEeiCt-rTIpjJTg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_iusMgPbfEeiCt-rTIpjJTg" event="_0Sf28PbeEeiCt-rTIpjJTg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_kekrMPbeEeiCt-rTIpjJTg" source="_fEer8PbcEeiCt-rTIpjJTg" target="_TxcRcPbcEeiCt-rTIpjJTg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_leNGwPbfEeiCt-rTIpjJTg" event="_MyuEcPbfEeiCt-rTIpjJTg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_sQWlcPbeEeiCt-rTIpjJTg" source="_TxcRcPbcEeiCt-rTIpjJTg" target="_3j6rwPbbEeiCt-rTIpjJTg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_ox5sIPbfEeiCt-rTIpjJTg" event="_KPw_gPbfEeiCt-rTIpjJTg"/>
+      </transition>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_zJiLIPbbEeiCt-rTIpjJTg" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_3j6rwPbbEeiCt-rTIpjJTg" name="unsubmit"/>
+      <subvertex xmi:type="uml:State" xmi:id="_TxcRcPbcEeiCt-rTIpjJTg" name="tl_unaudit"/>
+      <subvertex xmi:type="uml:State" xmi:id="_fEer8PbcEeiCt-rTIpjJTg" name="dm_unaudit"/>
+      <subvertex xmi:type="uml:State" xmi:id="_mINNYPbcEeiCt-rTIpjJTg" name="hr_unrecord"/>
+      <subvertex xmi:type="uml:State" xmi:id="_vNTJoPbcEeiCt-rTIpjJTg" name="hr_record"/>
+
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_BW_S4PbdEeiCt-rTIpjJTg" name="submit"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_GoS0cPbdEeiCt-rTIpjJTg" name="tlAudit"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_wf69MPbeEeiCt-rTIpjJTg" name="tlReject"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_Ky7B0PbdEeiCt-rTIpjJTg" name="dmAudit"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_6mTXUPbeEeiCt-rTIpjJTg" name="dmReject"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_RG9ywPbdEeiCt-rTIpjJTg" name="hrRecord"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_G6LZMPbeEeiCt-rTIpjJTg" name="SubmitEvent" signal="_BW_S4PbdEeiCt-rTIpjJTg"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_SQtzoPbeEeiCt-rTIpjJTg" name="TLAuditEvent" signal="_GoS0cPbdEeiCt-rTIpjJTg"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ZROB8PbeEeiCt-rTIpjJTg" name="DMAuditEvent" signal="_Ky7B0PbdEeiCt-rTIpjJTg"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_0Sf28PbeEeiCt-rTIpjJTg" name="HRRecordEvent" signal="_RG9ywPbdEeiCt-rTIpjJTg"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_KPw_gPbfEeiCt-rTIpjJTg" name="TLRejectEvent" signal="_wf69MPbeEeiCt-rTIpjJTg"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_MyuEcPbfEeiCt-rTIpjJTg" name="DMRejectEvent" visibility="package" signal="_6mTXUPbeEeiCt-rTIpjJTg"/>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_G09z8PbcEeiCt-rTIpjJTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G0_CEPbcEeiCt-rTIpjJTg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
